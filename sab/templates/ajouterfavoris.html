@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un favori</title>
+</head>
+
+<body>
+    <h1>Ajouter un favori</h1>
+    <form method="post" action="/favoris">
+        <input type="text" id="id_user" name="id_user" placeholder="Entrez le nouveau id_user">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom">
+        <input type="hidden" id="nom" name="name" value="{{ station.name }}" readonly>
+        <input type="hidden" id="numbikesavailable" name="numbikesavailable" value="{{ station.numbikesavailable }}">
+        <input type="hidden" id="numdocksavailable" name="numdocksavailable" value="{{ station.numdocksavailable }}">
+        <input type="hidden" id="ebike" name="ebike" value="{{ station.ebike }}">
+        <input type="hidden" id="mechanical" name="mechanical" value="{{ station.mechanical }}">
+        <button type="submit">Envoyer</button>
+    </form>
+
+
+</body>
+
+</html>

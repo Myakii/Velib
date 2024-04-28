@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modification du Favori</title>
+</head>
+<body>
+    <h1>Modification du Favori</h1>
+    <form action="/favoris/modification/{{ favoris.id_favoris }}" method="post">
+        <label for="nom">Nouveau Nom:</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez le nouveau nom">
+        <button type="submit">Modifier</button>
+    </form>
+</body>
+</html>

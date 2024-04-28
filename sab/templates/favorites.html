@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Favori</title>
+</head>
+
+<body>
+    <h1>Détails du Favori</h1>
+    {% for favori in favoris %}
+        <p>Nom: {{ favori.nom }}</p>
+        <p>Informations: {{ favori.data_json }}</p>
+        <a href="/favoris/{{ favori.id_favoris }}">Supprimer</a>
+        <a href="/favoris/modification/{{ favori.id_favoris }}"><button>Modifier</button></a>
+    {% endfor %}
+</body>
+</html>

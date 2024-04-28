@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+</head>
+<body>
+    <h1>Bienvenue sur Alice</h1>
+    <p>Bonjour, {{ prenom }}!</p>
+    <a href="/deconnexion">Déconnexion</a>
+    <form action="/login" method="post">
+        <input type="text" name="prenom" placeholder="Prénom" required>
+        <button type="submit">Connexion</button>
+    </form>
+    <a href="/register">Inscription</a> ou <a href="/login">Connexion</a>
+</body>
+</html>
+
+
+
+
